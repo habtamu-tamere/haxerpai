@@ -169,12 +169,6 @@
             text-align: center;
         }
 
-        .admin-login {
-            padding: 100px 80px;
-            background: #f5f5f5;
-            text-align: center;
-        }
-
         .login-form {
             max-width: 400px;
             margin: 0 auto;
@@ -276,6 +270,58 @@
             border-radius: 4px;
             font-size: 0.8em;
         }
+    
+    
+    
+        .solutions {
+            padding: 100px 20px;
+            background: #f9f9f9;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .solution-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            text-align: center;
+            border: 0px solid #e0e0e0;
+                   
+          
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .solution-icon {
+            font-size: 40px;
+            color: #1a237e;
+            margin-bottom: 20px;
+        }
+    
+    
+        .gps-tracker {
+            height: 400px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .booking-calendar {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
 
     </style>
 </head>
@@ -287,6 +333,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -316,8 +363,7 @@
                 <i class="fas fa-chart-line"></i>
                 <h3>Business Intelligence</h3>
                 <p>Real-time analytics and reporting for data-driven decisions</p>
-
-</div>
+            </div>
             <div class="feature-card">
                 <i class="fas fa-boxes"></i>
                 <h3>Inventory Management</h3>
@@ -332,6 +378,135 @@
     </section>
 
   
+    
+    
+    
+    
+    
+    <!-- Industry Solutions Section -->
+    <section class="solutions" id="solutions">
+        <h2 style="text-align: center; margin-bottom: 40px;">Industry-Specific Solutions</h2>
+        <div class="solutions-grid">
+            <!-- Building Management -->
+            <div class="solution-card">
+                <i class="fas fa-building solution-icon"></i>
+                <h3>Smart Building Management</h3>
+                <p>Integrated facility management</p>
+                <ul class="solution-features">
+                    <li>Energy Management</li>
+                    <li>Maintenance Scheduling</li>
+                    <li>Tenant Portal</li>
+                    <li>Reporting</li>
+                </ul>
+            </div>
+
+            <!-- Education Management -->
+            <div class="solution-card">
+                <i class="fas fa-graduation-cap solution-icon"></i>
+                <h3>School/Training Management</h3>
+                <p>Complete education institution management system</p>
+                <ul>
+                    <li>Student Information System</li>
+                    <li>E-Learning Integration</li>
+                    <li>Attendance Tracking</li>
+                     <li>Reporting</li>
+                </ul>
+            </div>
+
+            <!-- Fuel Station Management -->
+            <div class="solution-card">
+                <i class="fas fa-gas-pump solution-icon"></i>
+                <h3>Fuel Station Management</h3>
+                <p>End-to-end fuel station operations management</p>
+                <ul>
+                    <li>Tank Monitoring</li>
+                    <li>Fleet Management</li>
+                    <li>POS Integration</li>
+                </ul>
+            </div>
+
+            <!-- Healthcare Management -->
+            <div class="solution-card">
+                <i class="fas fa-hospital solution-icon"></i>
+                <h3>Hospital Management</h3>
+                <p>Comprehensive healthcare management solution</p>
+                <ul>
+                    <li>Patient Records</li>
+                    <li>Appointment Scheduling</li>
+                    <li>Pharmacy Management</li>
+                </ul>
+            </div>
+
+            <!-- Payment Solutions -->
+            <div class="solution-card">
+                <i class="fas fa-wallet solution-icon"></i>
+                <h3>Seamless Payment Integration</h3>
+                <p>Unified payment processing system</p>
+                <ul>
+                    <li>Multi-Gateway Support</li>
+                    <li>QR Code Payments</li>
+                    <li>POS Reconciliation</li>
+                </ul>
+            </div>
+
+            <!-- Hospitality Management -->
+            <div class="solution-card">
+                <i class="fas fa-utensils solution-icon"></i>
+                <h3>Cafe/Restaurant Management</h3>
+                <p>Complete F&B business management</p>
+                <ul>
+                    <li>Inventory Tracking</li>
+                    <li>Table Management</li>
+                    <li>Online Ordering</li>
+                     <li>Reporting</li>
+                </ul>
+            </div>
+
+            <!-- Event Management -->
+            <div class="solution-card">
+                <i class="fas fa-calendar-alt solution-icon"></i>
+                <h3>Event Management</h3>
+                <p>End-to-end event planning solution</p>
+                <ul>
+                    <li>Ticketing System</li>
+                    <li>Venue Management</li>
+                    <li>Attendee Tracking</li>
+                </ul>
+            </div>
+       
+        
+        
+                 
+            <!-- Fleet Management Card -->
+            <div class="solution-card">
+                <i class="fas fa-truck solution-icon"></i>
+                <h3>Fleet Management</h3>
+                <p>Comprehensive vehicle fleet optimization system</p>
+                <ul>
+                    <li>Real-time GPS Tracking</li>
+                    <li>Maintenance Scheduling</li>
+                    <li>Fuel Management</li>
+                    <li>Driver Performance Analytics</li>
+                </ul>
+            </div>
+
+            <!-- Ticketing & Booking Card -->
+            <div class="solution-card">
+                <i class="fas fa-ticket-alt solution-icon"></i>
+                <h3>Ticketing & Booking</h3>
+                <p>Integrated reservation and ticketing system</p>
+                <ul>
+                    <li>Online Booking Engine</li>
+                    <li>Seat Management</li>
+                    <li>Dynamic Pricing</li>
+                    <li>Mobile Ticketing</li>
+                </ul>
+            </div>
+            </div>
+        
+    </section>
+    
+    
   <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <h2>Contact HaxerpAI</h2>
